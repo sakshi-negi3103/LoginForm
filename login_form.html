@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Login</title>
+    <style>
+      body{
+        background-image:url("bgi.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        height:100vh;
+      }
+      .login{
+        height:390px;
+        width:370px;
+        display: block;
+        margin-top:130px;
+        margin-left:auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius:8px;
+        background-color:rgba(13, 13, 13, 0.11);
+
+
+
+      }
+      h3{
+      padding:20px;
+      color: white;
+      }
+
+      .extra{
+        margin: 15px;
+        text-align: center;
+        }
+
+        .extra a{
+          color: white;
+            }
+
+
+      .btn{
+        background-color:#fbe6d4;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="login">
+      <form>
+        <h3>Account Login</h3>
+        <div class="form-group">
+          <input type="email" class="form-control" id="validationDefault01" aria-describedby="emailHelp" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="validationDefault02" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-block">Submit</button>
+        <div class = "extra">
+          <a href="">Forgot Password</a><br>
+        <a href="/register.html">New User? Sign Up Now</a>  </div>
+      </form>
+    </div>
+
+    <script>
+    function strengthChecker(pass){
+      var strength = 0
+        if (password.length < 8) {
+            return 'Too short'
+        }
+
+
+    }
+
+    </script>
+  </body>
+</html>

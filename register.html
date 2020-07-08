@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <script type="text/javascript" src="https://www.technicalkeeda.com/js/javascripts/plugin/jquery.js"></script>
+         <script type="text/javascript" src="https://www.technicalkeeda.com/js/javascripts/plugin/jquery.validate.js"></script>
+
+    <title>Sign Up</title>
+    <style>
+      body{
+        background-image:url("bgi.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        height:100vh;
+
+      }
+      .register{
+        height:390px;
+        width:370px;
+        display: block;
+        margin-top:130px;
+        margin-left:auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius:8px;
+        background-color:rgba(0, 0, 0, 0.1);
+
+
+      }
+      h3{
+      text-align:center;
+      padding-bottom:10px;
+      color:white;
+
+      }
+      .btn{
+        background-color:#fbe6d4;
+      }
+
+      .extra{
+
+        margin: 15px;
+        text-align: center;
+      }
+
+      .extra a{
+        color: white;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+
+    <div class="register" >
+      <form  action="login_form.html">
+        <h3>Sign Up!</h3>
+        <div class="form-group">
+          <input type="email" class="form-control" name="email" id="validationDefault01" aria-describedby="emailHelp" placeholder="Enter your Email" required>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" name="password" id="password" placeholder="Enter a password" required>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" name="confirmpassword" id="confirmpassword" placeholder="Repeat password" required>
+          <p id="demo"></p>
+        </div>
+        <button type="submit" class="btn btn-block" onclick="return Validate()">Submit</button>
+        <div class = "extra">
+        <a href="/login_form.html">Already a user? Sign in</a>  </div>
+      </form>
+    </div>
+
+    <script>
+    function Validate() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmpassword").value;
+            if (password != confirmPassword) {
+              document.getElementById("demo").innerHTML = "<img src='error.png' height='25px;'>Passwords do not match!!";
+                return false;
+            }
+            return true;
+        }
+
+    </script>
+  </body>
+</html>
